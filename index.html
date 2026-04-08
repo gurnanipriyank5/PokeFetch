@@ -13,9 +13,18 @@
   <header class="header">
     <h1>PokéFetch</h1>
     <p>Discover your favorite Pokémon</p>
+    <button id="theme-toggle" class="control-element theme-btn header-theme-btn">🌙 Dark Mode</button>
   </header>
 
   <main class="container">
+    <div class="controls-container">
+      <input type="text" id="search-input" placeholder="Search Pokémon by name..." class="control-element search-bar">
+      <select id="sort-select" class="control-element sort-dropdown">
+        <option value="default">Sort by Name</option>
+        <option value="a-z">A - Z</option>
+        <option value="z-a">Z - A</option>
+      </select>
+    </div>
     <div id="loading" class="loading-spinner">
       <div class="spinner"></div>
       <p>Loading Pokémon...</p>
