@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeFetch - Milestone 2</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <h1>PokéFetch</h1>
+    <p>Discover your favorite Pokémon</p>
+    <button id="theme-toggle" class="control-element theme-btn header-theme-btn">🌙 Dark Mode</button>
+  </header>
+
+  <main class="container">
+    <div class="controls-container">
+      <input type="text" id="search-input" placeholder="Search Pokémon by name..." class="control-element search-bar">
+      <select id="sort-select" class="control-element sort-dropdown">
+        <option value="default">Sort by Name</option>
+        <option value="a-z">A - Z</option>
+        <option value="z-a">Z - A</option>
+      </select>
+    </div>
+    <div id="loading" class="loading-spinner">
+      <div class="spinner"></div>
+      <p>Loading Pokémon...</p>
+    </div>
+
+    <div id="pokemon-container" class="pokemon-grid hidden">
+
+    </div>
+
+    <div id="pagination-controls" class="pagination hidden">
+      <button id="prev-btn" class="btn" disabled>Previous</button>
+      <span id="page-info">Page 1</span>
+      <button id="next-btn" class="btn">Next</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 PokeFetch - All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
